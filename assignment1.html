@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFOH2009 - Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <img src="https://www.ieabroad.com/wp-content/uploads/TUD.png" alt="TU Dublin Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Nanjing_University_of_Technology_logo.png" alt="Nanjing Tech University Logo">
+        <h1>INFOH2009 - INFORMATION TECHNOLOGY - Assignment 1</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignment1.html">Assignment 1</a></li>
+            <li><a href="assignment2.html">Assignment 2</a></li>
+            <li><a href="assignment3.html">Assignment 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>An AI Appplication for Fire Detection</h2>
+        </section>
+        <section>
+            <h2>A Fire Detection Application Based on YOLO Model</h2>
+            <p class="main-content">In the process of production and operation, a large number of machines will inevitably appear mechanical failure or even cause fire, so the traditional factory will send people to inspect the plant at a fixed time. However, this method is not efficient and does not immediately detect the fire. With the development of computer technology, the level of computer vision continues to improve. With the help of OpenGL open source library, YOLO artificial intelligence model and other means, people have developed some models or programs that can efficiently detect various objects. They are usually extremely efficient and can detect fires that would be difficult for a human to detect, in addition to displaying confidence levels.In the lower part of the page, there are several links to AI for fire detection, with links in English.</p>
+            <p class="main-content">In addition to that, we've learned a little bit about YOLO,we used Pytorch to train the YOLOv8 Model with a dataset containing more than 1500 data.We created a Android application and here are some pictures showing how the program works:</p>
+            <img src="Fire Detection APP1.jpg" alt="Fire Detection APP1">
+            <img src="Fire Detection APP2.jpg" alt="Fire Detection APP2">
+            <p class="main-content">YOLO (You Only Look Once) is an object detection algorithm based on deep learning. Its core idea is to transform the object detection task into a single global image regression problem, so as to achieve real-time and efficient object recognition. Unlike traditional two-stage detection methods such as Faster R-CNN, YOLO divides the input image into S×S grids, and each grid is responsible for predicting a fixed number of Bounding boxes and their confidence (whether they contain an object and their localization accuracy). Each bounding box contains the coordinates (center, width and height), the confidence that the object exists, and the probability of belonging to the class. All the prediction results were generated at once by Convolutional Neural Network (CNN), and the final detection box was selected by Non-maximum Suppression (NMS). The advantage of YOLO lies in end-to-end training and global inference, which can capture image context information and avoid local misjudgments. The loss function combines the localization error (coordinate offset), the confidence error (whether the object is included or not), and the classification error (class probability). With the iteration of the version (such as YOLOv3/v4/v5), the model improves the detection accuracy of small targets and dense scenes by multi-scale prediction, optimizing Anchor design, and introducing attention mechanism, while maintaining real-time performance, which is widely used in automatic driving, security monitoring and other fields.</p>
+            <p>Add links with examples:</p>
+            <ul class="link-list">
+                <li><a href="https://www.youtube.com/watch?v=AkT2oEWiQ5g" target="_blank" class="styled-link">Could AI help detect wildfires? Here's the technology developers say is a game-changer</a></li>
+                <li><a href="https://viterbischool.usc.edu/news/2025/03/detecting-wildfires-with-ai/" target="_blank" class="styled-link">Detecting wildfires with AI</a></li>
+                <li><a href="https://baijiahao.baidu.com/s?id=1827825336028407912&wfr=spider&for=pc" target="_blank" class="styled-link">Park charging pile networking: AI flame recognition system real-time fire monitoring</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
