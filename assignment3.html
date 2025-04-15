@@ -29,25 +29,31 @@
         <section>
             <h2>Task 1</h2>
             <p>What was the issue?</p>
+            <h4>0 is not displayed, and the increased number is not displayed when incremented by 1.</h4>
             <p>How did you solve it?</p>
+            <h4>The code only shows the number once when it is turned on, and pressing button A only changes the number and does not show the new number againSet the variable to 0 before displaying the number score, and add a display number score after increasing by 1.</h4>
             <p>Share a screenshot of the solution:</p>
-            <img src="#" alt="Task 1 Solution Screenshot">
+            <img src="Pictures/Microbit Debug01.jpg" alt="Task 1 Solution Screenshot">
 
         </section>
         <section>
             <h2>Task 2</h2>
             <p>What was the issue?</p>
+            <h4>Pin 1 does not automatically turn off when the room is lit</h4>
             <p>How did you solve it?</p>
+            <h4>In the original code, there was no addition of the condition that if the brightness is less than 128, the flashlight should be turned off.Using the if-else structure, write in else When the brightness is greater than 128, write a value of 0 to the number in pin 1.</h4>
             <p>Share a screenshot of the solution:</p>
-            <img src="#" alt="Task 2 Solution Screenshot">
+            <img src="Pictures/Microbit Debug02.jpg" alt="Task 2 Solution Screenshot">
 
         </section>
         <section>
             <h2>Task 3</h2>
             <p>What was the issue?</p>
+            <h4>Even though the variable "secret" in the code looks completely random, it's really hard to turn it into 5</h4>
             <p>How did you solve it?</p>
+            <h4>The bug in this code is that the value of 'secret' is only randomly generated once at the beginning of the program and does not change after that. So if A 5 is not generated the first time, no matter how many times button A is pressed, a 5 will not appear. You only need to change the position of the random number set from the boot time to the press of button A.</h4>
             <p>Share a screenshot of the solution:</p>
-            <img src="#" alt="Task 3 Solution Screenshot">
+            <img src="Pictures/Microbit Debug03.jpg" alt="Task 3 Solution Screenshot">
 
         </section>
 
